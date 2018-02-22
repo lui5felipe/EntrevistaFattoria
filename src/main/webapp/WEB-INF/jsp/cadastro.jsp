@@ -13,28 +13,24 @@
     </head>
     <body>
         <div align="center">
-        <h1>New/Edit Employee</h1>
-        <form:form action="saveEmployee" method="post" modelAttribute="employee">
+        <h1>Criar Produto</h1>
+        <form:form action="/salvar" method="post" modelAttribute="employee">
         <table>
             <form:hidden path="id"/>
             <tr>
-                <td>Name:</td>
+                <td>Nome:</td>
                 <td><form:input path="name" /></td>
             </tr>
             <tr>
-                <td>Email:</td>
-                <td><form:input path="email" /></td>
+                <td>Prelo:</td>
+                <td><form:input path="preco" /></td>
             </tr>
             <tr>
-                <td>Address:</td>
-                <td><form:input path="address" /></td>
+                <td>Quantidade:</td>
+                <td><form:input path="qtd" /></td>
             </tr>
             <tr>
-                <td>Telephone:</td>
-                <td><form:input path="telephone" /></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"><input type="submit" value="Save"></td>
+                <td colspan="2" align="center"><input type="submit" value="Salvar"></td>
             </tr>
         </table>
         </form:form>
