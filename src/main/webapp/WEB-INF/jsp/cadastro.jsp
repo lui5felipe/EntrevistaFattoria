@@ -14,7 +14,7 @@
     <body>
         <div align="center">
         <h1>Criar Produto</h1>
-        <form:form action="/salvar" method="post" modelAttribute="employee">
+        <form:form action="/salvar" method="post" modelAttribute="Produto">
         <table>
             <form:hidden path="id"/>
             <tr>
@@ -22,7 +22,7 @@
                 <td><form:input path="name" /></td>
             </tr>
             <tr>
-                <td>Prelo:</td>
+                <td>Preço:</td>
                 <td><form:input path="preco" /></td>
             </tr>
             <tr>
